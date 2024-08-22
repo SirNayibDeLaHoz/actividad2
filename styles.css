@@ -45,7 +45,7 @@ header {
     border-radius: 5px;
     margin: 1rem;
     padding: 1rem;
-    width: calc(25% - 2rem);
+    width: calc(20% - 2rem); /* Cambia el ancho para 4 tarjetas por fila */
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     transition: transform 0.3s;
     -webkit-box-shadow: 19px 14px 25px 3px rgba(0, 0, 0, 0.75);
@@ -91,18 +91,21 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 .social-links {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+    justify-content: center; /* Centra los elementos en la línea */
 }
 
 .social-links li {
     display: inline;
-    margin: 0 1rem;
+    margin: 0.5rem 1rem; /* Aumenta el margen superior e inferior */
 }
 
 .social-links a {
